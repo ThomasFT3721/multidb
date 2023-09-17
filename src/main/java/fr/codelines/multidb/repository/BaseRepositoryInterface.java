@@ -1,8 +1,10 @@
 package fr.codelines.multidb.repository;
 
+import java.sql.SQLException;
+
 public interface BaseRepositoryInterface<T, ID> {
 
-    T findById(ID id);
+    T findById(ID id) throws SQLException;
 
     /*
     T save(T entity);

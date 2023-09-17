@@ -1,9 +1,10 @@
 package fr.codelines.multidb.repository;
 
-public interface BaseRepository<T, ID> {
+public interface BaseRepositoryInterface<T, ID> {
 
     T findById(ID id);
 
+    /*
     T save(T entity);
 
     void delete(T entity);
@@ -15,4 +16,6 @@ public interface BaseRepository<T, ID> {
     long count();
 
     boolean existsById(ID id);
+
+    */
 }
